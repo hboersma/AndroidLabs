@@ -18,7 +18,11 @@
         <activity
             android:name=".LoginName"
             android:label="@string/title_activity_login_name"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+            />
+
         <activity
             android:name=".ListItemsActivity"
             android:label="@string/title_activity_list_items"
