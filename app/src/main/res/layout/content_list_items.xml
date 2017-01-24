@@ -13,41 +13,47 @@
     android:columnCount="2"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.harvb.androidlabs.ListItemsActivity"
-    tools:showIn="@layout/activity_list_items">
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/star_big_on"
-        android:id="@+id/imageButton2"
-        android:layout_row="0"
-        android:layout_column="0"
-        android:gravity="fill" />
-
-    <CheckBox
-        android:text="CheckBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/checkBox"
-        android:layout_row="0"
-        android:layout_column="1"
-        android:gravity="fill" />
+    tools:showIn="@layout/activity_list_items"
+    android:soundEffectsEnabled="false">
 
     <RadioButton
-        android:text="RadioButton"
+        android:text="@string/radio_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/radioButton"
-        android:layout_row="1"
+        android:layout_row="0"
         android:layout_column="0"
-        android:gravity="fill" />
+        android:layout_gravity="top|bottom|left|right|fill"
+        android:gravity="fill|start" />
 
     <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/switch1"
-        android:text="Enable Something"
+        android:text="@string/switcher"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:gravity="fill"
+        />
+
+    <ImageButton
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/star_big_on"
+        android:id="@+id/imageButton2"
         android:layout_row="1"
         android:layout_column="1"
         android:gravity="fill" />
+
+    <CheckBox
+        android:text="@string/checkbox"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:gravity="fill"
+        android:checked="false"
+        android:fadeScrollbars="false" />
+
 </GridLayout>

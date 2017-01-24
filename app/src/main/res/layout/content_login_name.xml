@@ -15,7 +15,7 @@
     tools:showIn="@layout/activity_login_name">
 
     <TextView
-        android:text="Login"
+        android:text="@string/login"
         android:layout_width="107dp"
         android:layout_height="wrap_content"
         android:id="@+id/textView2" />
@@ -24,16 +24,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
-        android:text="Name"
+
         android:ems="10"
         android:id="@+id/editText"
         android:hint='"login name"' />
 
-    <EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Password"
+        android:text="@string/password"
         android:ems="10"
         android:id="@+id/editText3" />
 
@@ -41,8 +41,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:text="Name"
+        android:hint="Name"
         android:ems="10"
         android:id="@+id/editText4" />
 
+    <Button
+        android:text="@string/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button" />
 </LinearLayout>
